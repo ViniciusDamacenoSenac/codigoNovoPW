@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reserva Confirmada - Travellers+</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <!-- Cabeçalho -->
+  <header>
+    <div class="content">
+      <nav>
+        <p class="brand">Travellers<strong>Plus</strong></p>
+        <ul>
+          <!-- Links de navegação -->
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#catalog">Catálogo</a></li>
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#feature">Características</a></li>
+          <li><a href="paginaDest.html">Minhas Reservas</a></li> 
+              </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Exibição dos dados da reserva -->
+  <div class="reserva-confirmada">
+    <h2>Sua Reserva Foi Confirmada</h2>
+    <p><strong>Nome:</strong> <span id="nomeReserva"></span></p>
+    <p><strong>Número do Cartão:</strong> <span id="numeroCartaoReserva"></span></p>
+    <p><strong>Validade:</strong> <span id="validadeReserva"></span></p>
+    <p><strong>CVV:</strong> <span id="cvvReserva"></span></p>
+    <p><strong>Método de Pagamento:</strong> <span id="metodoPagamentoReserva"></span></p>
+  </div>
+
+  <footer>
+    <div class="main">
+      <div class="content footer-links">
+        <div class="footer-company">
+          <h4>Empresa</h4>
+          <h6>Sobre</h6>
+          <h6>Contato</h6>
+        </div>
+        <div class="footer-rental">
+          <h4>Aluguel</h4>
+          <h6>Recomendações</h6>
+          <h6>catálogo</h6>
+          <h6>Ajuda</h6>
+        </div>
+        <div class="footer-social">
+          <h4>Permaneça conectado</h4>
+          <div class="social-icons">
+            <img src="images/instagram.png" alt="Instagram">
+            <img src="images/facebook.png" alt="Facebook">
+          </div>
+        </div>
+        <div class="footer-contact">
+          <h4>Contato</h4>
+          <h6>+55 11 911111111</h6>
+          <h6>viniciusdamacenoo111@gmail.com</h6>
+          <h6>Senac-SP, São Paulo-SP</h6>
+        </div>
+      </div>
+    </div>
+    <div class="last">travellers+ 2024</div>
+  </footer>
+
+  <script>
+  document.addEventListener("DOMContentLoaded", function() {
+  // Recuperar os dados do armazenamento local assim que a página é carregada
+  var nomeReserva = localStorage.getItem("nomeReserva");
+  var numeroCartaoReserva = localStorage.getItem("numeroCartaoReserva");
+  var validadeReserva = localStorage.getItem("validadeReserva");
+  var cvvReserva = localStorage.getItem("cvvReserva");
+  var metodoPagamentoReserva = localStorage.getItem("metodoPagamentoReserva");
+
+  // Exibir os dados na página
+  document.getElementById("nomeReserva").innerText = nomeReserva;
+  document.getElementById("numeroCartaoReserva").innerText = numeroCartaoReserva;
+  document.getElementById("validadeReserva").innerText = validadeReserva;
+  document.getElementById("cvvReserva").innerText = cvvReserva;
+  document.getElementById("metodoPagamentoReserva").innerText = metodoPagamentoReserva;
+});
+
+  </script>
+  
+
+  <style>
+    header {
+      width: 100%;
+      height: 80px;
+      background: #333;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .brand {
+      font-size: 24px;
+      margin-right: auto;
+      margin-left: 20px;
+    }
+
+    nav ul {
+      display: flex;
+      list-style-type: none;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin-right: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 16px;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #ffd700;
+    }
+
+    .reserva-confirmada {
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      border: 2px solid #333;
+      border-radius: 10px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .reserva-confirmada h2 {
+      margin-bottom: 20px;
+      color: #333;
+      text-align: center;
+    }
+
+    .reserva-confirmada p {
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .reserva-confirmada strong {
+      font-weight: bold;
+    }
+
+    footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .footer-links h4 {
+      margin-bottom: 10px;
+    }
+
+    .footer-links h6 {
+      margin-bottom: 5px;
+    }
+
+    .social-icons {
+      margin-top: 10px;
+    }
+
+    .social-icons img {
+      width: 30px;
+      margin: 0 5px;
+    }
+
+    .last {
+      margin-top: 20px;
+    }
+  </style>
+</body>
+
+</html>

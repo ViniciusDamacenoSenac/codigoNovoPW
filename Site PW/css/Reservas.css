@@ -1,0 +1,293 @@
+/* Estilos gerais */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #7c7c7c;
+}
+
+
+/* Estilos do cabeçalho */
+/* Estilos do cabeçalho */
+/* Estilos do cabeçalho */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  z-index: 1000; /* Para garantir que o cabeçalho fique acima do conteúdo */
+  height: 10vh; /* Definindo o cabeçalho para ocupar 10% da altura da janela */
+}
+
+.content {
+  max-width: 1000px;
+  margin: auto;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  justify-content: space-around; /* Distribui os itens de forma uniforme no espaço disponível */
+  align-items: flex-end; /* Alinha os itens na parte inferior do container */
+  height: 90%; /* Reduz a altura do ul para 90% para mover os itens um pouco para cima */
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Estilos do formulário de pagamento */
+.pagamento-form {
+  position: absolute; /* Posicionamento absoluto */
+  top: 50%; /* Centraliza verticalmente */
+  left: 50%; /* Centraliza horizontalmente */
+  transform: translate(-50%, -50%); /* Ajusta a posição para que o centro do elemento esteja no ponto (50%, 50%) */
+  width: 90%; /* Aumenta a largura para 90% */
+  max-width: 800px; /* Aumenta a largura máxima para 800px */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(0, 0, 0);
+  background-color: #ffffff; /* Altera a cor de fundo para branco para aumentar a visibilidade */
+  color: #000000; /* Altera a cor do texto para preto para aumentar a visibilidade */
+}
+
+.pagamento-form h2 {
+  text-align: center;
+  color: #000000;
+}
+
+.pagamento-form form {
+  text-align: center;
+}
+
+.pagamento-form label {
+  display: block;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+.pagamento-form input,
+.pagamento-form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+}
+
+.pagamento-form button {
+  padding: 20px 30px; /* Aumenta o preenchimento para aumentar o tamanho do botão */
+  font-size: 1.2em; /* Aumenta o tamanho da fonte para tornar o texto do botão maior */
+  margin-top: 15px;
+  background-color: #4d10f5;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pagamento-form button:hover {
+  background-color: #000000;
+}
+/* ... Restante do seu código CSS ... */
+
+
+
+/* Estilos do rodapé */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  height: 10vh; /* Definindo o rodapé para ocupar 10% da altura da janela */
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.footer-links h4 {
+  margin-bottom: 10px;
+}
+
+.footer-links h6 {
+  margin-bottom: 5px;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons img {
+  width: 30px;
+  margin: 0 5px;
+}
+
+.last {
+  margin-top: 20px;
+}
+
+
+/* Estilos do cabeçalho */
+   header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    z-index: 1000; /* Para garantir que o cabeçalho fique acima do conteúdo */
+    height: 10vh; /* Definindo o cabeçalho para ocupar 10% da altura da janela */
+  }
+  
+  .content {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin-right: 20px;
+  }
+  
+  nav ul li:last-child {
+    margin-right: 0;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Estilos da seção de reserva confirmada */
+  .reserva-confirmada {
+    max-width: 800px;
+    margin: 150px auto 50px; /* Ajuste conforme necessário */
+    padding: 20px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .reserva-confirmada h2 {
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .reserva-confirmada p {
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .reserva-confirmada strong {
+    font-weight: bold;
+  }
+  
+  /* Estilos do formulário de pagamento */
+  .pagamento-form {
+    width: 80%;
+    max-width: 400px;
+    margin: 0 auto; /* Centralizando o formulário */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    background-color: #3b3b3b;
+  }
+  
+  .pagamento-form h2 {
+    text-align: center;
+    color: #000000;
+  }
+  
+  .pagamento-form form {
+    text-align: center;
+  }
+  
+  .pagamento-form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #000000;
+  }
+  
+  .pagamento-form input,
+  .pagamento-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+  }
+  
+  .pagamento-form button {
+    padding: 12px 24px;
+    margin-top: 15px;
+    background-color: #4d10f5;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .pagamento-form button:hover {
+    background-color: #000000;
+  }
+  
+  /* Estilos do rodapé */
+  footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    height: 10vh; /* Definindo o rodapé para ocupar 10% da altura da janela */
+  }
+  
+  .footer-links {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .footer-links h4 {
+    margin-bottom: 10px;
+  }
+  
+  .footer-links h6 {
+    margin-bottom: 5px;
+  }
+  
+  .social-icons {
+    margin-top: 10px;
+  }
+  
+  .social-icons img {
+    width: 30px;
+    margin: 0 5px;
+  }
+  
+  .last {
+    margin-top: 20px;
+  }
